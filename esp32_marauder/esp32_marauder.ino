@@ -202,9 +202,9 @@ void setup()
   #ifdef WRITE_PACKETS_SERIAL
     
     #ifdef XIAO_ESP32_S3
-      Serial1.begin(115200, SERIAL_8N1, XIAO_RX1, XIAO_TX1);
+      Serial2.begin(115200, SERIAL_8N1, XIAO_RX1, XIAO_TX1);
     #else
-      Serial1.begin(115200);
+      Serial2.begin(115200);
     #endif
     
   #endif
