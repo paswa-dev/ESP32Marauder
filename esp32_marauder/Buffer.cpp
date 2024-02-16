@@ -224,20 +224,20 @@ void Buffer::forceSaveSerial() {
 
   if(useA){
     if(bufSizeB > 0){
-      Serial2.write(bufB, bufSizeB);
+      Serial1.write(bufB, bufSizeB);
       bufSizeB = 0;
     }
     if(bufSizeA > 0){
-      Serial2.write(bufA, bufSizeA);
+      Serial1.write(bufA, bufSizeA);
       bufSizeA = 0;
     }
   } else {
     if(bufSizeA > 0){
-      Serial2.write(bufA, bufSizeA);
+      Serial1.write(bufA, bufSizeA);
       bufSizeA = 0;
     }
     if(bufSizeB > 0){
-      Serial2.write(bufB, bufSizeB);
+      Serial1.write(bufB, bufSizeB);
       bufSizeB = 0;
     }
   }
